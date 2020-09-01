@@ -11,7 +11,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "precommit": "npm run test",
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc -b",
     "pretest": "npm run lint",
     "test": "jest",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
